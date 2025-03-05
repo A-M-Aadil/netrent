@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    background: #fff;
+    color: #31374F;
+    font-family: var(--font-robotopro);
+  }
+}
+@font-face {
+  font-family: 'RoobertPRO';
+  src: url('/src/assets/fonts/RoobertPRO-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RoobertPRO';
+  src: url('/src/assets/fonts/RoobertPRO-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@theme {
+  --font-robotopro: 'RoobertPRO', sans-serif;
+
+  --color-primary: #31374F;
+
+  --color-secondary: #D9D9D9;
+}
