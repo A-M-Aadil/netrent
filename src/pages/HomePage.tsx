@@ -22,7 +22,7 @@ const HomePage = () => {
             videoSrc: image1,
             onSearchChange: (e: React.ChangeEvent<HTMLInputElement>) => { setSearch({ ...search, search1: e.target.value }) },
             searchButtonText: "Find Agent",
-            searchPlaceholder: "Residential Property Sales",
+            searchPlaceholder: "Enter Your Suburb",
             searchValue: search.search1,
             onSearchClick: () => { console.log('Search 1') }
         },
@@ -33,7 +33,7 @@ const HomePage = () => {
             videoSrc: image2,
             onSearchChange: (e: React.ChangeEvent<HTMLInputElement>) => { setSearch({ ...search, search2: e.target.value }) },
             searchButtonText: "Find Agent",
-            searchPlaceholder: "Residential Property Management",
+            searchPlaceholder: "Enter Your Suburb",
             searchValue: search.search2,
             onSearchClick: () => { console.log('Search 2') }
         },
@@ -44,7 +44,7 @@ const HomePage = () => {
             videoSrc: image2,
             onSearchChange: (e: React.ChangeEvent<HTMLInputElement>) => { setSearch({ ...search, search3: e.target.value }) },
             searchButtonText: "Find Agent",
-            searchPlaceholder: "Commercial Property Sales",
+            searchPlaceholder: "Enter Your Suburb",
             searchValue: search.search3,
             onSearchClick: () => { console.log('Search 3') }
         },
@@ -66,29 +66,29 @@ const HomePage = () => {
             videoSrc: image2,
             onSearchChange: (e: React.ChangeEvent<HTMLInputElement>) => { setSearch({ ...search, search5: e.target.value }) },
             searchButtonText: "Find Agent",
-            searchPlaceholder: "Buyers Agent",
+            searchPlaceholder: "Enter Your Suburb",
             searchValue: search.search5,
             onSearchClick: () => { console.log('Search 5') }
-        },
-        {
-            icon: buildingIcon,
-            title: "Business  Sales",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque mattis sem sit amet egestas. Maecenas aliquam ornare diam, sit amet varius risus viverra a. Curabitur mollis enim fringilla, laoreet mauris eu, sodales ipsum. Sed at sem mollis, tincidunt risus ut, pharetra ligula.",
-            videoSrc: image2,
-            onSearchChange: (e: React.ChangeEvent<HTMLInputElement>) => { setSearch({ ...search, search6: e.target.value }) },
-            searchButtonText: "Find Agent",
-            searchPlaceholder: "Business  Sales",
-            searchValue: search.search6,
-            onSearchClick: () => { console.log('Search 6') }
         },
         {
             icon: buildingIcon,
             title: "Rooming",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque mattis sem sit amet egestas. Maecenas aliquam ornare diam, sit amet varius risus viverra a. Curabitur mollis enim fringilla, laoreet mauris eu, sodales ipsum. Sed at sem mollis, tincidunt risus ut, pharetra ligula.",
             videoSrc: image2,
+            onSearchChange: (e: React.ChangeEvent<HTMLInputElement>) => { setSearch({ ...search, search6: e.target.value }) },
+            searchButtonText: "Find Agent",
+            searchPlaceholder: "Enter Your Suburb",
+            searchValue: search.search6,
+            onSearchClick: () => { console.log('Search 6') }
+        },
+        {
+            icon: buildingIcon,
+            title: "Business Sales",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque mattis sem sit amet egestas. Maecenas aliquam ornare diam, sit amet varius risus viverra a. Curabitur mollis enim fringilla, laoreet mauris eu, sodales ipsum. Sed at sem mollis, tincidunt risus ut, pharetra ligula.",
+            videoSrc: image2,
             onSearchChange: (e: React.ChangeEvent<HTMLInputElement>) => { setSearch({ ...search, search7: e.target.value }) },
             searchButtonText: "Find Agent",
-            searchPlaceholder: "Rooming",
+            searchPlaceholder: "Enter Your Suburb",
             searchValue: search.search7,
             onSearchClick: () => { console.log('Search 7') }
         }
