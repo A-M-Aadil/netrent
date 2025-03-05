@@ -37,7 +37,15 @@ const CoreLogicModel = ({ open, onClose }: CoreLogicModelModelProps) => {
             className={`w-full flex flex-col h-screen md:h-auto text-black fixed z-[5000] top-0 left-0 ${open ? 'translate-y-0' : '-translate-y-[200%]'} transition-all duration-500 ease-in-out items-center`}
         >
             <div className="w-full max-w-[1920px] flex flex-col ">
-                <div className="w-full h-full md:h-auto bg-[#F6F5F7] flex flex-col  items-center rounded-b-[36px] min-h-[556px] shadow-md drop-shadow-md p-4 md:px-16 md:py-7" ref={modalRef}>
+                <div className="w-full h-full md:h-auto bg-[#F6F5F7] relative flex flex-col  items-center rounded-b-[36px] min-h-[556px] shadow-md drop-shadow-md p-4 md:px-16 md:py-7" ref={modalRef}>
+                    <div className='flex items-center justify-center absolute top-7 right-10'>
+                        <div
+                            onClick={onClose}
+                            className='size-[54px] bg-[#B3B3B3]/20 border-[1px] cursor-pointer border-white rounded-full flex items-center justify-center'>
+                            <div className='h-[2px]  rounded-l-full rounded-r-full w-[20px] bg-black rotate-45 absolute' />
+                            <div className='h-[2px]  rounded-l-full rounded-r-full w-[20px] bg-black -rotate-45 absolute' />
+                        </div>
+                    </div>
                     <div className='flex flex-col w-full gap-1'>
                         <p className='text-primary text-[16px]'>
                             Powered by
@@ -66,10 +74,10 @@ const CoreLogicModel = ({ open, onClose }: CoreLogicModelModelProps) => {
                     <div className='w-full flex flex-col items-center pt-[40px] sm:pt-[80px]'>
                         <div className='flex flex-col items-center gap-3'>
                             <h2 className='text-primary text-[20px] sm:text-[28px] md:text-[32px] font-bold capitalize'>
-                            Suburb Market Reports
+                                Suburb Market Reports
                             </h2>
                             <p className='max-w-[690px]'>
-                            Explore market trends, median property prices, property statistics and recent sales across suburbs in your local area.
+                                Explore market trends, median property prices, property statistics and recent sales across suburbs in your local area.
                             </p>
                         </div>
                         <div className='w-full max-w-[690px] py-7'>

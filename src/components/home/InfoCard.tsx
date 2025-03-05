@@ -36,12 +36,14 @@ const InfoCard = ({ direction, icon, title, description, videoSrc, onSearchChang
                 </div>
                 </div>
 
+                <div className='w-full max-w-[414px]'>
                 <Search
                     onChange={(e) => { onSearchChange(e) }}
                     onClick={() => { onSearchClick() }}
                     value={searchValue}
                     buttonText={searchButtonText}
                     placeholderText={searchPlaceholder} />
+                </div>
             </div>
             <div className='w-full lg:w-1/2 flex flex-row justify-center '>
                 <div className='w-full h-auto rounded-[24px] overflow-hidden'>
