@@ -11,6 +11,15 @@ import homeIcon from './home-icon.png';
 import intrestIcon from './intrest-icon.png';
 import lawIcon from './law-icon.png';
 import callIcon from './call-icon.png';
+import chairIcon from './chair-icon.png';
+import bulbIcon from './bulb-icon.png';
+import saftyIcon from './safty-icon.png';
+import keyIcon from './key-icon.png';
+import missionIcon from './mission-icon.png';
+import markerBlackIcon from './marker-black-icon.png';
+import minPriceIcon from './min-price-icon.png';
+import maxPriceIcon from './max-price-icon.png';
+import searchGrayIcon from './search-gray-icon.png';
 
 
 export {
@@ -26,5 +35,15 @@ export {
     homeIcon,
     intrestIcon,
     lawIcon,
-    callIcon
+    callIcon,
+    chairIcon,
+    bulbIcon,
+    saftyIcon,
+    keyIcon,
+    missionIcon,
+    markerBlackIcon,
+    minPriceIcon,
+    maxPriceIcon,
+    searchGrayIcon,
+    
 };
