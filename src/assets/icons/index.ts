@@ -34,6 +34,11 @@ import arrowRightWhiteIcon from './arrow-white-right.png';
 import featureIcon2 from './feature-icon-2.png';
 import inquireIcon from './inquire-icon.png';
 import checkCircleGreenIcon from './check-circle-green-icon.png';
+import leasedIcon from './leased-icon.png';
+import leaseIcon from './lease-icon.png';
+import soldIcon from './sold-icon.png';
+import cartIcon from './cart-icon.png';
+import dropdownIcon from './drop-down-icon.png';
 
 export {
   locationCircleIcon,
@@ -71,5 +76,10 @@ export {
     arrowRightWhiteIcon,
     featureIcon2,
     inquireIcon,
-    checkCircleGreenIcon
+    checkCircleGreenIcon,
+    leasedIcon,
+    leaseIcon,
+    soldIcon,
+    cartIcon,
+    dropdownIcon
 };

@@ -8,6 +8,7 @@ import BusinessPage from "./pages/BusinessPage";
 import ResidentialPage from "./pages/ResidentialPage";
 import ResidentialView from "./pages/ResidentialView";
 import { Toaster } from "react-hot-toast";
+import CommercialPage from "./pages/CommercialPage";
 const App = () => {
   return (
     <Suspense fallback={<Loader />}>
@@ -20,6 +21,7 @@ const App = () => {
               <Route path="business" element={<BusinessPage />} />
               <Route path="residential" element={<ResidentialPage />} />
               <Route path="residential/:id/:title" element={<ResidentialView />} />
+              <Route path="commercial" element={<CommercialPage />} />
           </Route>
         </Routes>
       </Router>

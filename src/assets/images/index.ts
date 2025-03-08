@@ -23,7 +23,10 @@ import r5Img from './r5-img.png';
 import r6Img from './r6-img.png';        
 import pr1Img from './pr1-img.png';        
 import pr2Img from './pr2-img.png';        
-import pr3Img from './pr3-img.png';        
+import pr3Img from './pr3-img.png';  
+import c1Img from './c1-img.png';      
+import c2Img from './c2-img.png';      
+import c3Img from './c3-img.png';      
 
 export {
   agentCompared,
@@ -52,4 +55,8 @@ export {
   pr2Img,
   pr3Img,
   testUser2,
+  c1Img,
+  c2Img,
+  c3Img,
+  
 };
