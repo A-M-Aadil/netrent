@@ -49,7 +49,7 @@ const AboutPage = () => {
                     </div>
                     <div className="w-fit hidden md:flex flex-row md:absolute bottom-0 right-[-20px]">
                         <img src={aboutHouse} alt="About House" className="w-full md:w-[min(50vw,1100px)] xl:w-[min(90vw,1100px)] h-[min(50vw,518px)]" />
-                        <div className="w-full hidden md:block bg-gradient-to-l to-white from-60% from-transparent h-[518px] absolute z-[10]" />
+                        <div className="w-full hidden md:block bg-gradient-to-l to-[#f6f5f7] from-60% from-transparent h-[518px] absolute z-[10]" />
                     </div>
                 </div>
             </div>

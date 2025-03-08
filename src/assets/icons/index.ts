@@ -20,7 +20,20 @@ import markerBlackIcon from './marker-black-icon.png';
 import minPriceIcon from './min-price-icon.png';
 import maxPriceIcon from './max-price-icon.png';
 import searchGrayIcon from './search-gray-icon.png';
-
+import commercialIcon from './commercial-icon.png';
+import doorIcon from './door-icon.png';
+import filterIcon from './filter-icon.png';
+import verifiedIcon from './verfied-icon.png';
+import arrowRightGreenIcon from './arrow-right-green.png';
+import garageIcon from './garage-icon.png';
+import bedIcon from './bed-icon.png';
+import bathIcon from './bath-icon.png';
+import featureIcon from './feature-icon.png';
+import arrowLeftWhiteIcon from './arrow-white-left.png';
+import arrowRightWhiteIcon from './arrow-white-right.png';
+import featureIcon2 from './feature-icon-2.png';
+import inquireIcon from './inquire-icon.png';
+import checkCircleGreenIcon from './check-circle-green-icon.png';
 
 export {
   locationCircleIcon,
@@ -45,5 +58,18 @@ export {
     minPriceIcon,
     maxPriceIcon,
     searchGrayIcon,
-    
+    doorIcon,
+    commercialIcon,
+    filterIcon,
+    verifiedIcon,
+    arrowRightGreenIcon,
+    garageIcon,
+    bedIcon,
+    bathIcon,
+    featureIcon,
+    arrowLeftWhiteIcon,
+    arrowRightWhiteIcon,
+    featureIcon2,
+    inquireIcon,
+    checkCircleGreenIcon
 };
