@@ -20,7 +20,7 @@ const CommercialPropertyCard = ({ data }: CommercialPropertyCardProps) => {
             <div className='w-full flex flex-col p-2 h-[calc(100%-170px)]'>
                 <div className='w-full flex-grow flex flex-col sm:flex-row gap-2 justify-between'>
                     <div className='w-full sm:w-2/3 flex flex-col'>
-                        <h2 className='text-[#2D2D2D] text-[min(3vw,14px)] lg:text-[min(3vw,16px)] font-bold'>
+                        <h2 className='text-[#2D2D2D] text-[min(3vw,14px)] xl:text-[min(3vw,16px)] font-bold'>
                             {data.title.length > 90 ? data.title.slice(0, 90) + '...' : data.title}
                         </h2>
                     </div>

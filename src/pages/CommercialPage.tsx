@@ -1,7 +1,7 @@
 import React from 'react'
 import { cartIcon, dropdownIcon, leasedIcon, leaseIcon, soldIcon } from '../assets/icons'
 import { c1Img, c2Img, c3Img } from '../assets/images'
-import CommercialPropertyCard from '../components/commercial/CommercialPropertyCard'
+import PropertySlider from '../components/commercial/PropertySlider'
 
 const CommercialPage = () => {
     const [search, setSearch] = React.useState('')
@@ -145,7 +145,7 @@ const CommercialPage = () => {
         <div className='w-full flex flex-col px-5 py-4 text-[#2d2d2d] sm:px-7 gap-[50px] md:px-20 sm:py-6 relative'>
             <section id='search' className='flex flex-col items-center justify-center h-full w-full relative'>
                 <div className='w-full flex flex-col gap-4 items-center justify-end max-w-[750px] h-full relative'>
-                    <div className='w-full flex flex-row p-2 gap-2  top-0 bg-white shadow-lg drop-shadow-md max-w-[740px] rounded-[20px]'>
+                    <div className='w-full flex flex-row p-2 gap-2  top-0 bg-white shadow-sm max-w-[740px] rounded-[20px]'>
                         {/* Tabs */}
                         <div
                             onClick={() => setActiveTab(0)}
@@ -262,14 +262,12 @@ const CommercialPage = () => {
                     Explore new properties
                 </h2>
 
-                <div className='relative w-full grid md:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4 gap-8 '>
-                    {
-                        data.map((item, index) => (
-                            <div key={index} className='flex flex-row items-center justify-center'>
-                                <CommercialPropertyCard data={item} />
-                            </div>
-                        ))
-                    }
+                <div className='w-full flex flex-row relative '>
+                    <PropertySlider data={data} />
+                </div>
+
+                <div className='w-full flex flex-row relative '>
+                    <PropertySlider data={data} />
                 </div>
             </div>
         </div>
