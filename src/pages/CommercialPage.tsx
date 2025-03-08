@@ -262,7 +262,7 @@ const CommercialPage = () => {
                     Explore new properties
                 </h2>
 
-                <div className='relative w-full grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8 '>
+                <div className='relative w-full grid md:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4 gap-8 '>
                     {
                         data.map((item, index) => (
                             <div key={index} className='flex flex-row items-center justify-center'>
