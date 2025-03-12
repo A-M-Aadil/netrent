@@ -3,6 +3,7 @@ import { callIcon, dollerIcon, googleIcon, starIcon } from '../../assets/icons'
 import Search from '../root/Search'
 import { whiteLogo } from '../../assets/logos'
 import { homeVideo1 } from '../../assets/videos'
+import { useNavigate } from 'react-router-dom'
 
 const HeroSection = () => {
 
@@ -16,6 +17,12 @@ const HeroSection = () => {
         "Business  Sales",
         "Rooming",
     ]
+
+    const navigate = useNavigate()
+
+    const handleSearchAgent = () => {
+        navigate(`/agent?query=${search}`)
+    }
     return (
         <div className='w-full flex flex-col lg:flex-row gap-7 md:gap-10 font-robotopro '>
             <div className='flex flex-col w-full xl:max-w-1/2'>
@@ -65,7 +72,7 @@ const HeroSection = () => {
 
                 <div className='flex flex-col gap-4 pt-[51px]'>
 
-                    <Search onChange={(e) => { setSearch(e.target.value) }} onClick={() => { }} value={search} buttonText='Find Agent' placeholderText='Enter your postcode or suburb' />
+                    <Search onChange={(e) => { setSearch(e.target.value) }} onClick={() => { handleSearchAgent() }} value={search} buttonText='Find Agent' placeholderText='Enter your postcode or suburb' />
                     <div className='w-full flex flex-row items-center justify-end gap-2'>
                         <p className='text-primary text-[11px] font-robotopro'>
                             Powerd by

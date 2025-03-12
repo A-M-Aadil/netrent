@@ -33,6 +33,7 @@ const CommercialPage = () => {
 
     const data = [
         {
+            id: 14567545,
             title: 'Tenancy 3, 320 Ruthven Street, Toowoomba City, QLD 4350',
             bedrooms: 3,
             bathrooms: 2,
@@ -42,6 +43,7 @@ const CommercialPage = () => {
             img: c1Img
         },
         {
+            id: 14567545,
             title: 'Tenancy 3, 320 Ruthven Street, Toowoomba City, QLD 4350',
             bedrooms: 3,
             bathrooms: 2,
@@ -51,6 +53,7 @@ const CommercialPage = () => {
             img: c2Img
         },
         {
+            id: 14567545,
             title: 'Tenancy 3, 320 Ruthven Street, Toowoomba City, QLD 4350',
             bedrooms: 3,
             bathrooms: 2,
@@ -60,6 +63,7 @@ const CommercialPage = () => {
             img: c3Img
         },
         {
+            id: 14567545,
             title: 'Tenancy 3, 320 Ruthven Street, Toowoomba City, QLD 4350',
             bedrooms: 3,
             bathrooms: 2,
@@ -69,6 +73,7 @@ const CommercialPage = () => {
             img: c1Img
         },
         {
+            id: 14567545,
             title: 'Tenancy 3, 320 Ruthven Street, Toowoomba City, QLD 4350',
             bedrooms: 3,
             bathrooms: 2,
@@ -78,6 +83,7 @@ const CommercialPage = () => {
             img: c2Img
         },
         {
+            id: 14567545,
             title: 'Tenancy 3, 320 Ruthven Street, Toowoomba City, QLD 4350',
             bedrooms: 3,
             bathrooms: 2,
@@ -87,6 +93,7 @@ const CommercialPage = () => {
             img: c3Img
         },
         {
+            id: 14567545,
             title: 'Tenancy 3, 320 Ruthven Street, Toowoomba City, QLD 4350',
             bedrooms: 3,
             bathrooms: 2,
@@ -96,6 +103,7 @@ const CommercialPage = () => {
             img: c1Img
         },
         {
+            id: 14567545,
             title: 'Tenancy 3, 320 Ruthven Street, Toowoomba City, QLD 4350',
             bedrooms: 3,
             bathrooms: 2,
@@ -105,6 +113,7 @@ const CommercialPage = () => {
             img: c2Img
         },
         {
+            id: 14567545,
             title: 'Tenancy 3, 320 Ruthven Street, Toowoomba City, QLD 4350',
             bedrooms: 3,
             bathrooms: 2,
@@ -114,6 +123,7 @@ const CommercialPage = () => {
             img: c3Img
         },
         {
+            id: 14567545,
             title: 'Tenancy 3, 320 Ruthven Street, Toowoomba City, QLD 4350',
             bedrooms: 3,
             bathrooms: 2,
@@ -123,6 +133,7 @@ const CommercialPage = () => {
             img: c1Img
         },
         {
+            id: 14567545,
             title: 'Tenancy 3, 320 Ruthven Street, Toowoomba City, QLD 4350',
             bedrooms: 3,
             bathrooms: 2,
@@ -132,6 +143,7 @@ const CommercialPage = () => {
             img: c2Img
         },
         {
+            id: 14567545,
             title: 'Tenancy 3, 320 Ruthven Street, Toowoomba City, QLD 4350',
             bedrooms: 3,
             bathrooms: 2,

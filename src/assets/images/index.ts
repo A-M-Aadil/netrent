@@ -27,6 +27,21 @@ import pr3Img from './pr3-img.png';
 import c1Img from './c1-img.png';      
 import c2Img from './c2-img.png';      
 import c3Img from './c3-img.png';      
+import market1Img from './markert1-img.png';      
+import market2Img from './market2-img.png';      
+import paintImg from './paint-img.png';      
+import serviceCard1Img from './service-card-1.png';      
+import serviceCard2Img from './service-card-2.png';      
+import sl1Img from './sl-img-1.png';      
+import sl2Img from './sl-img-2.png';      
+import sl3Img from './sl-img-3.png';      
+import sl4Img from './sl-img-4.png';      
+import ro1Img from './ro1-img.png';      
+import ro2Img from './ro2-img.png';      
+import ro3Img from './ro3-img.png';      
+import ro4Img from './ro4-img.png';      
+import ro5Img from './ro5-img.png';      
+import ro6Img from './ro6-img.png';      
 
 export {
   agentCompared,
@@ -58,5 +73,19 @@ export {
   c1Img,
   c2Img,
   c3Img,
-  
+  sl1Img,
+  sl2Img,
+  sl3Img,
+  sl4Img,
+  market1Img,
+  market2Img,
+  paintImg,
+  serviceCard1Img,
+  serviceCard2Img,
+  ro1Img,
+  ro2Img,
+  ro3Img,
+  ro4Img,
+  ro5Img,
+  ro6Img
 };

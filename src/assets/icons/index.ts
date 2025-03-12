@@ -39,6 +39,32 @@ import leaseIcon from './lease-icon.png';
 import soldIcon from './sold-icon.png';
 import cartIcon from './cart-icon.png';
 import dropdownIcon from './drop-down-icon.png';
+import eyeIcon from './eye-icon.png';
+import fbIcon from './fb-icon.png';
+import tiktokIcon from './tiktok-icon.png';
+import ytIcon from './yt-icon.png';
+import inIcon from './in-icon.png';
+import plusIcon from './plus-icon.png';
+import markerGrayIcon from './marker-gray-icon.png';
+import urgentIcon from './urgernt-icon.png';
+import verfiedbatchIcon from './verified-batch-icon.png';
+import filterIcon2 from './filter-icon-2.png';
+import filterIcon3 from './filter-icon-3.png';
+import pointIcon from './point-icon.png';
+import linkedinIcon from './linkedin-icon.png';
+import facebookIcon from './facebook-icon.png';
+import tiktokIcon1 from './tiktok1-icon.png';
+import instagramIcon from './instagram-icon.png';
+import youtubeIcon from './youtube-icon.png';
+import bagIcon from './bag-icon.png';
+import keyGrayIcon from './key-gray-icon.png';
+import emailBlackIcon from './email-black-icon.png';
+import roomIcon from './room-icon.png';
+import calendarGrayIcon from './calender-gray-icon.png';
+import calendarGreenIcon from './calender-green-icon.png';
+import timeGrayIcon from './time-gray-icon.png';
+import timeGreenIcon from './time-green-icon.png';
+import bellIcon from './bell-icon.png';
 
 export {
   locationCircleIcon,
@@ -81,5 +107,31 @@ export {
     leaseIcon,
     soldIcon,
     cartIcon,
-    dropdownIcon
+    dropdownIcon,
+    eyeIcon,
+    fbIcon,
+    tiktokIcon,
+    ytIcon,
+    inIcon,
+    plusIcon,
+    markerGrayIcon,
+    urgentIcon,
+    verfiedbatchIcon,
+    filterIcon2,
+    filterIcon3,
+    pointIcon,
+    linkedinIcon,
+    facebookIcon,
+    tiktokIcon1,
+    instagramIcon,
+    youtubeIcon,
+    bagIcon,
+    keyGrayIcon,
+    emailBlackIcon,
+    roomIcon,
+    calendarGrayIcon,
+    calendarGreenIcon,
+    timeGrayIcon,
+    timeGreenIcon,
+    bellIcon
 };

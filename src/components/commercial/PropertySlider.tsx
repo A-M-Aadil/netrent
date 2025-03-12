@@ -5,6 +5,7 @@ import { arrowLeftWhiteIcon, arrowRightWhiteIcon } from '../../assets/icons';
 
 interface PropertySliderProps {
     data: {
+        id: number;
         title: string;
         bedrooms: number;
         bathrooms: number;

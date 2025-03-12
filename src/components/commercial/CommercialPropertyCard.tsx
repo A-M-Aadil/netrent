@@ -2,6 +2,7 @@ import { bathIcon, bedIcon, featureIcon } from '../../assets/icons';
 
 interface CommercialPropertyCardProps {
     data: {
+        id: number;
         title: string;
         bedrooms: number;
         bathrooms: number;
@@ -13,7 +14,9 @@ interface CommercialPropertyCardProps {
 }
 const CommercialPropertyCard = ({ data }: CommercialPropertyCardProps) => {
     return (
-        <div className='w-full max-w-[406px] h-fit max-h-[360px] sm:h-[300px] p-2 flex flex-col gap-2 bg-white border-black/20 rounded-[20px] border-[1px]'>
+        <a 
+        href={`/commercial/${data.id}/${data.title.replace(/ /g, '-').toLowerCase()}`}
+        className='w-full max-w-[406px] h-fit max-h-[360px] sm:h-[300px] p-2 flex flex-col gap-2 bg-white border-black/20 rounded-[20px] border-[1px]'>
             <div className='w-full h-[170px] flex items-center justify-center rounded-[12px] overflow-hidden'>
                 <img src={data.img} alt='Property' className='object-cover object-center w-full h-full' />
             </div>
@@ -66,7 +69,7 @@ const CommercialPropertyCard = ({ data }: CommercialPropertyCardProps) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </a>
     )
 }
 

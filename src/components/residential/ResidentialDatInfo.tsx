@@ -3,8 +3,8 @@ import { r1Img, r2Img, r3Img, r4Img, r5Img, r6Img, testUser } from '../../assets
 import { gsap } from 'gsap';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'; // Import ScrollToPlugin
 import { arrowLeftWhiteIcon, arrowRightWhiteIcon, featureIcon2, homeIcon, markerBlackIcon } from '../../assets/icons';
-import MapView from './MapView';
-import InquireForm from './InquireForm';
+import MapView from '../root/MapView';
+import InquireForm from '../root/InquireForm';
 
 // Register GSAP ScrollTo Plugin
 gsap.registerPlugin(ScrollToPlugin);

@@ -10,10 +10,10 @@ const Footer = () => {
                 <img src={nLogo} alt='logo' className='w-[52px] h-[48px]' />
                 <img src={netrentLogo} alt='logo' className='w-[73px] h-[35px]' />
             </div>
-            <hr className='h-[1px] w-full bg-[#5376FF] border-none' />
+            <hr className='h-[1px] w-full bg-[#FFFFFF] border-none' />
 
             <div className='w-full flex flex-col-reverse lg:flex-row gap-10'>
-                <div className='w-full xl:w-1/2 flex flex-col gap-6'>
+                <div className='w-full lg:w-1/2 flex flex-col gap-6'>
                     <div className='flex flex-col gap-3'>
                         <h1 className='text-white text-[24px] font-bold'>
                             NetRent
@@ -100,17 +100,17 @@ const Footer = () => {
                         <img
                             src={agentCompared}
                             alt='Agent Compared'
-                            className='w-[162px] h-[44px] hover:scale-110 hover:filter hover:hue-rotate-7 transition-all duration-300 ease-in-out'
+                            className='w-[162px] lg:w-[min(10vw,162px)] h-[44px] hover:scale-110 hover:filter hover:hue-rotate-7 transition-all duration-300 ease-in-out'
                         />
                         <img
                             src={suburbsCovered}
                             alt='Suburbs Covered'
-                            className='w-[162px] h-[44px] hover:scale-110 hover:filter hover:hue-rotate-7 transition-all duration-300 ease-in-out'
+                            className='w-[162px] lg:w-[min(10vw,162px)] h-[44px] hover:scale-110 hover:filter hover:hue-rotate-7 transition-all duration-300 ease-in-out'
                         />
                         <img
                             src={agentsCovered}
                             alt='Agents Covered'
-                            className='w-[162px] h-[44px] hover:scale-110 hover:filter hover:hue-rotate-7 transition-all duration-300 ease-in-out'
+                            className='w-[162px] lg:w-[min(10vw,162px)] h-[44px] hover:scale-110 hover:filter hover:hue-rotate-7 transition-all duration-300 ease-in-out'
                         />
                     </div>
 
