@@ -27,8 +27,10 @@ const ResidentialCard = ({ data }: ResidentialCardProps) => {
     const [currentImage, setCurrentImage] = useState(0);
     const [showImageViewer, setShowImageViewer] = useState(false);
     const [currentViewImage, setCurrentViewImage] = useState(0);
+    const [currentViewMobileImage, setCurrentViewMobileImage] = useState(0);
     const sliderRef = useRef(null);
     const viewerSliderRef = useRef(null);
+    const viewerSliderMobileRef = useRef(null);
 
     // GSAP animation for sliding images
     useEffect(() => {
@@ -50,6 +52,16 @@ const ResidentialCard = ({ data }: ResidentialCardProps) => {
             });
         }
     }, [currentViewImage]);
+
+    useEffect(() => {
+        if (viewerSliderMobileRef.current) {
+            gsap.to(viewerSliderMobileRef.current, {
+                x: -currentViewMobileImage * 100 + '%', // Move viewer slider based on currentViewImage
+                duration: 0.5,
+                ease: 'power2.out',
+            });
+        }
+    }, [currentViewMobileImage]);
 
     // Handle previous image
     const handlePrev = () => {
@@ -79,6 +91,22 @@ const ResidentialCard = ({ data }: ResidentialCardProps) => {
             setCurrentViewImage(currentViewImage + 1);
         } else {
             setCurrentViewImage(0); // Loop back to the first image
+        }
+    };
+
+    const handleMViewerPrev = () => {
+        if (currentViewMobileImage > 0) {
+            setCurrentViewMobileImage(currentViewMobileImage - 1);
+        }
+    };
+
+    // Handle next image in viewer
+    const handleMViewerNext = () => {
+        if (currentViewMobileImage < data.propertyImages.length - 1) {
+            setCurrentViewMobileImage(currentViewMobileImage + 1);
+            console.log(currentViewMobileImage);
+        } else {
+            setCurrentViewMobileImage(0); // Loop back to the first image
         }
     };
 
@@ -368,7 +396,7 @@ const ResidentialCard = ({ data }: ResidentialCardProps) => {
 
                         <div className='w-full sm:hidden flex flex-col gap-5 items-center justify-between relative'>
                             <div className='w-[calc(100%-16px)] h-[350px] overflow-hidden rounded-[16px]'>
-                                <div ref={viewerSliderRef} className='w-full h-full flex flex-row'>
+                                <div ref={viewerSliderMobileRef} className='w-full h-full flex flex-row'>
                                     {data.propertyImages.map((image, index) => (
                                         <div key={index} className='w-full h-full flex-shrink-0'>
                                             <img src={image} alt='property' className='w-full h-full object-cover' />
@@ -380,7 +408,7 @@ const ResidentialCard = ({ data }: ResidentialCardProps) => {
 
                                 <div className='w-[150px] flex items-center justify-center'>
                                     <div
-                                        onClick={handleViewerPrev}
+                                        onClick={handleMViewerPrev}
                                         className='w-[40px] cursor-pointer h-[40px] bg-white/20 group border-white border-[1px] rounded-[12px] flex items-center justify-center'>
                                         <img src={arrowLeftWhiteIcon} alt='left arrow' className='w-[10px] h-[16px] group-hover:-translate-x-1 ease-in-out transition-all duration-300' />
                                     </div>
@@ -388,7 +416,7 @@ const ResidentialCard = ({ data }: ResidentialCardProps) => {
 
                                 <div className='w-[150px] flex items-center justify-center'>
                                     <div
-                                        onClick={handleViewerNext}
+                                        onClick={handleMViewerNext}
                                         className='w-[40px] h-[40px] cursor-pointer group bg-white/20 border-white border-[1px] rounded-[12px] flex items-center justify-center'>
                                         <img src={arrowRightWhiteIcon} alt='left arrow' className='w-[10px] h-[16px] group-hover:translate-x-1 ease-in-out transition-all duration-300' />
                                     </div>
