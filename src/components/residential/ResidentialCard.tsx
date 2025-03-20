@@ -60,7 +60,7 @@ const ResidentialCard = ({ data }: ResidentialCardProps) => {
                 duration: 0.5,
                 ease: 'power2.out',
             });
-        }
+        } 
     }, [currentViewMobileImage]);
 
     // Handle previous image

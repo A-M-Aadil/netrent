@@ -9,11 +9,13 @@ import AgentMarketPlace from '../components/agent/AgentMarketPlace';
 import AgentIntrest from '../components/agent/AgentIntrest';
 import SignInModal from '../components/agent/SignInModal';
 import { useSearchParams } from 'react-router-dom';
+import SignUpModal from '../components/agent/SignUpModal';
 
 
 const AgentPage = () => {
     const [activeTab, setActiveTab] = React.useState(0);
     const [showLoginModal, setShowLoginModal] = React.useState(false);
+    const [showSignUpModal, setShowSignUpModal] = React.useState(false);
     const sliderImages = [
         sl1Img,
         sl2Img,
@@ -165,8 +167,8 @@ const AgentPage = () => {
             </section>
         </div>
 
-        <SignInModal show={showLoginModal} onClose={() => setShowLoginModal(false)} />
-
+        <SignInModal show={showLoginModal} onClose={() => setShowLoginModal(false)} onClickSignUp={()=> {setShowLoginModal(false); setShowSignUpModal(true)}} />
+        <SignUpModal show={showSignUpModal} onClose={() => setShowSignUpModal(false)} onClickSignIn={()=> {setShowSignUpModal(false); setShowLoginModal(true)}} />
         </>
     )
 }
